@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="res/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="res/js/script.js"></script>
     <title>postIt! Just Post It</title>
   </head>
   <body>
@@ -16,10 +18,26 @@
           <input type="text" name="search"><button type="button">Search</button>
         </div>
         <div class="avatar-container">
-          <img src="res/images/avatar.png" class="avatar" alt="Me">
+          <img onclick="imageClicked()" src="res/images/avatar.png" class="avatar" id="picture" alt="Me">
         </div>
       </nav>
     </header>
+
+    
+    <div id="dropDown">
+      <div id = "dropDownArea" class = "content">
+        <div id = "information" class = "info">
+          <p id = "name" class="name"></label><br>
+          <p id = "email" class="email"></label>
+        </div>
+        <a href="browse.html">Browse</a>
+        <a href="login.html">Log Out</a>
+      </div>
+      
+    </div>
+
+
+
     <section class="main-container">
       <div class="post">
         <div class="post-author">
