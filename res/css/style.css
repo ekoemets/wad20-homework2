@@ -3,7 +3,8 @@
     outline: none;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -39,7 +40,7 @@ a {
     text-align: center;
 }
 
-#login-container form div > input {
+#login-container form div>input {
     padding: 8px 16px;
     margin: 4px 0;
 }
@@ -71,7 +72,7 @@ header:hover {
 
 nav {
     display: flex;
-    background-color: #ffffff;
+    background-color: #fafafa;
     align-items: center;
 }
 
@@ -90,7 +91,7 @@ nav div img {
     object-position: top center;
 }
 
-nav div.search-container > input {
+nav div.search-container>input {
     box-sizing: border-box;
     height: 30px;
     width: 80%;
@@ -99,7 +100,7 @@ nav div.search-container > input {
     border: 1px solid #e0e0e0;
 }
 
-nav div.search-container > button {
+nav div.search-container>button {
     height: 30px;
     width: 20%;
     margin: 0;
@@ -119,6 +120,12 @@ nav div.avatar-container {
     margin: auto auto;
     padding: 90px 15px 15px 15px;
     background-color: #ffffff;
+}
+
+@media (max-width: 696px) {
+    .main-container {
+        width: 85%;
+    }
 }
 
 .post {
@@ -159,7 +166,7 @@ nav div.avatar-container {
     left: 35px;
 }
 
-.post .post-author .post-author-info + small {
+.post .post-author .post-author-info+small {
     float: right;
     color: grey;
     padding: 10px;
@@ -181,7 +188,7 @@ nav div.avatar-container {
     display: inline;
 }
 
-.post .post-title ~ .post-actions {
+.post .post-title~.post-actions {
     padding: 10px;
 }
 
@@ -201,4 +208,48 @@ nav div.avatar-container {
 
 .like-button.liked {
     background-color: #01579b;
+}
+
+#accounts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#accounts-container>.account {
+    max-width: 400px;
+    flex: 1 0 40%;
+    margin: 1em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 10px;
+}
+
+.account>button {
+    margin-bottom: 2em;
+    padding: 12px 70px;
+    font-size: 1em;
+    background-color: #82008f;
+}
+
+.account>button.followed {
+    background-color: white;
+    border: 1px solid #82008f;
+    color: #82008f;
+}
+
+.account>h2 {
+    margin: 1em 1em;
+}
+
+.account>img {
+    margin-top: 2em;
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    object-position: 50% 10%;
+    border-radius: 50%;
 }
