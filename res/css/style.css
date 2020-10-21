@@ -210,46 +210,44 @@ nav div.avatar-container {
     background-color: #01579b;
 }
 
-#accounts-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.avatar {
+    cursor: pointer;
 }
 
-#accounts-container>.account {
-    max-width: 400px;
-    flex: 1 0 40%;
-    margin: 1em 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid rgb(168, 168, 168);
-    border-radius: 10px;
-}
-
-.account>button {
-    margin-bottom: 2em;
-    padding: 12px 70px;
-    font-size: 1em;
-    background-color: #82008f;
-}
-
-.account>button.followed {
+.content {
+    display: none;
     background-color: white;
-    border: 1px solid #82008f;
-    color: #82008f;
+    position: absolute;
+    min-width: 200px;
+    min-height: fit-content;
 }
 
-.account>h2 {
-    margin: 1em 1em;
+.content>a {
+    color: #089bf0;
+    border-top: 1px solid;
+    border-color: #6e6b6b;
+    padding: 10px;
+    text-decoration: underline;
 }
 
-.account>img {
-    margin-top: 2em;
-    height: 120px;
-    width: 120px;
-    object-fit: cover;
-    object-position: 50% 10%;
-    border-radius: 50%;
+.info>p {
+    color: black;
+    line-height: 0;
+    padding-left: 10px;
+}
+
+.name {
+    padding-top: 10px;
+    padding-bottom: 3px;
+}
+
+.email {
+    padding-bottom: 10px;
+}
+
+.show {
+    flex-direction: column;
+    display: flex;
+    top: 50px;
+    right: 0px;
 }

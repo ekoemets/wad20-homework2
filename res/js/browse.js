@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
     fetchAccounts()
         .then((res) => {
             let accounts = res.map(acc => createAccountDiv(acc));
