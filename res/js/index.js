@@ -50,7 +50,7 @@ function createPostDiv(post) {
             </div>
             
             <div class=${ post.media ? "post-image" : "non-ex"}>
-                <${ post.media ? post.media.type : "img"} src="${ post.media ? post.media.url : ''}" alt="">
+                <${ post.media ? post.media.type : "img"} src="${ post.media ? post.media.url : ''}" alt="" ${ post.media ? post.media.type = "video" ? "controls" : "" : ""}>
             </div>
 
             <div class = "post-title">
